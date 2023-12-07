@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -13,8 +13,8 @@
     <!-- Dentro questo div ci sarà il contenuto che gli passo dalla istanza di vue  -->
 
     <div id="app"> 
-        <img src={{image}}>
-        <p> {{ message }}</p>
+        <img v-bind:src="image">
+        <h1> {{ message }}</h1>
     </div>
 
     <script type="text/javascript" src="js/script.js"></script>
